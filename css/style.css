@@ -12,6 +12,7 @@ body {
   /* background-color: red; */
   width: 100%;
   text-align: center;
+  margin: auto;
 }
 
 .row{
@@ -20,8 +21,15 @@ body {
 }
 
 .box {
-  background-color: blue;
+  /* background-color: blue; */
+  position: relative;
   display: inline-block;
-  width: 100px;
-  height: 100px;
+
+}
+
+.box .sale{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: green;
 }
