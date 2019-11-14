@@ -11,12 +11,12 @@ body {
 .container {
   /* background-color: red; */
   width: 100%;
-  text-align: center;
   margin: auto;
+  text-align: center;
 }
 
-.row{
-  background-color: yellow;
+.row {
+  /* background-color: yellow; */
   margin-bottom: 20px;
 }
 
@@ -24,12 +24,31 @@ body {
   /* background-color: blue; */
   position: relative;
   display: inline-block;
-
+  cursor: pointer;
 }
 
-.box .sale{
+.box .sale {
+  background-color: green;
   position: absolute;
   top: 0;
   right: 0;
-  background-color: green;
+}
+
+.box:nth-child(2n) .sale {
+  background-color: red;
+}
+
+.box .heart {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: red;
+  font-size: 30px;
+  text-align: center;
+  display: none;
+}
+
+.box:hover .heart {
+  display: block;
 }
